@@ -1,0 +1,19 @@
+{
+  "name": "worksho-3",
+  "version": "0.1.0",
+  "description": "node.js projetct eam ",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "backend"
+  ],
+  "author": "Felipe Arias M",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
