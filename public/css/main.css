@@ -1,0 +1,19 @@
+.img-title{
+    width: 20%;
+}
+
+section{
+    display: grid;
+    grid-template: auto / repeat(3,30%);
+}
+
+article{
+border: 1px solid gray;
+margin: 1em;
+padding: 0.5em;
+
+}
+/* main {
+    display: flex;
+    flex-direction: row;
+} */
