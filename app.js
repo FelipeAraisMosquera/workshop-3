@@ -12,8 +12,15 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => { // 
   res.render('index',{
     data: data.albums
+  });
 });
-});
+
+app.get('/albums', (req, res) => { //
+  const item = data.albums.find(p => p.id === req.query.id);
+  res.render('albums',{
+    item
+  });
+});  
 // nos traemnos de express el metodo listen para levantar el proyecto en le puerto definido
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
