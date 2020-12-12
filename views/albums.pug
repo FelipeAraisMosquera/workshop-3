@@ -2,12 +2,16 @@ extends template
 
 block content
 
-    div
-        hr
-        h1 Album: #{item.album}
-        hr
-        img(src=item.url, alt="")
-        h2 Artist: #{item.artist}
-        p Description: #{item.description}
-        audio(controls)
-            source(src=item.audio, type="")
+    div(class="container row")
+        div(class="col-xs-s4")
+            video(controls, poster=item.url, width=560)
+                source(src=item.video, type="video/mp4")
+        div(class="col-6")
+        h2 Album:
+         p #{item.album}
+        h2 Artist:
+         p #{item.artist}
+        h2 Description
+         p #{item.description}
+         audio(controls)
+            source(src=item.audio, type="audio/mp3")

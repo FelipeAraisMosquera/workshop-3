@@ -11,9 +11,11 @@ app.use(express.static(__dirname + '/public'));
 // Cuando el cliente ingrese a la ruta '/'
 app.get('/', (req, res) => { // 
   res.render('index',{
-    data: data.albums
+    data: data.albums             
   });
 });
+
+
 
 app.get('/albums', (req, res) => { //
   const item = data.albums.find(p => p.id === req.query.id);
